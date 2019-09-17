@@ -36,8 +36,9 @@ let store = new Store({
 const grid = new Grid({
     store,
     readOnly : true,
-    appendTo : 'container',
-    columns  : [{
+    appendTo : document.body,
+    flex     : '1 0 100%',
+    columns   : [{
         text  : 'Id',
         field : 'id',
         width : 60
